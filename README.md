@@ -72,11 +72,3 @@
 
    ![TF-4.1](global/images/output3.png)
 
-# Description & Notes
-- Create a resource group module first and call it in main.tf
-- Create a key vault module and call it main.tf
-- Make sure to create access policy in key vault (because though you create key vault, unless you access it, you will not be able to write secrets to it)
-- Create a module for aks cluster and call it main.tf (make sure to write outputs as they may need to push into keyvault)
-- Create a module for keyvault secret and call it in main.tf (make sure to push the aks outputs as keyvault secrets )
-
-<img src="diagram.png" width="200" height="300" align="center">
